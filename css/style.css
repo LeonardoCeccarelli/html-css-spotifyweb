@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.shell {
+    height: calc(100vh - 70px);
+    background-color: #141922;
+    display: flex;
+}
+
+.left_sidebar {
+    width: 40px;
+    background-color: #000000;
+    flex-shrink: 0;
+}
+
+.container {
+    flex-grow: 1;
+}
+
+.bottom_playbar {
+    height: 70px;
+    background-color: #282828;
+}
