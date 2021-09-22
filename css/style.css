@@ -10,13 +10,14 @@ body {
 
 a {
     text-decoration: none;
+    font-size: 10px;
 }
 
 ul li {
     list-style: none;
 }
 
-/* ***Sezione sidebar sx e contenuto***   */
+/* ***SEZIONE SIDEBAR SX CON CONTENUTI*** */
 
 .shell {
     height: calc(100vh - 70px);
@@ -24,7 +25,7 @@ ul li {
     display: flex;
 }
 
-/* **sidebar** sx */
+/* **SIDEBAR sx** */
 .left_sidebar {
     width: 40px;
     background-color: #000000;
@@ -33,6 +34,7 @@ ul li {
     flex-direction: column;
 }
 
+/* sidebar top */
 .left_sidebar_top {
     padding-top: 5px;
 }
@@ -43,37 +45,51 @@ ul li {
     padding-bottom: 5px;
 }
 
+/* sidebar middle */
 .left_sidebar_middle {
     flex-grow: 5;
 }
-
-/* .left_sidebar_bottom {
-} */
 
 .left_sidebar_bottom_icon {
     margin: auto;
     width: 15px;
 }
 
-/* **contenuto** */
+/* **CONTENUTO** */
 .container {
     flex-grow: 1;
 }
 
+/* bottone upgrade */
 .container_upgrade {
     padding: 10px 5px 12px;
     text-align: right;
 }
 
 .container_upgrade a {
-    font-size: 10px;
     color: white;
     padding: 5px 18px;
     border: 1px solid white;
     border-radius: 15px;
 }
 
-/* ***Sezione controlli brano basso*** */
+/* navbar centrale */
+.container_navbar {
+    padding: 15px 5px 0;
+}
+
+.container_navbar_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 15px;
+}
+
+.container_navbar_box a {
+    color: #878787;
+}
+
+/* ***SEZIONE CONTROLLI BASSI*** */
 
 .bottom_playbar {
     height: 70px;
@@ -84,4 +100,8 @@ ul li {
 
 .i_small {
     width: 10px;
+}
+
+.strong {
+    font-weight: bold;
 }
