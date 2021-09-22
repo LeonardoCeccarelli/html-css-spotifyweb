@@ -8,23 +8,80 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* ***Sezione sidebar sx e contenuto***   */
+
 .shell {
     height: calc(100vh - 70px);
     background-color: #141922;
     display: flex;
 }
 
+/* **sidebar** sx */
 .left_sidebar {
     width: 40px;
     background-color: #000000;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+.left_sidebar_top {
+    padding-top: 5px;
+}
+
+.left_sidebar_top_icon {
+    margin: auto;
+    width: 15px;
+    padding-bottom: 5px;
+}
+
+.left_sidebar_middle {
+    flex-grow: 5;
+}
+
+/* .left_sidebar_bottom {
+} */
+
+.left_sidebar_bottom_icon {
+    margin: auto;
+    width: 15px;
+}
+
+/* **contenuto** */
 .container {
     flex-grow: 1;
 }
 
+.container_upgrade {
+    padding: 10px 5px 12px;
+    text-align: right;
+}
+
+.container_upgrade a {
+    font-size: 10px;
+    color: white;
+    padding: 5px 18px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+/* ***Sezione controlli brano basso*** */
+
 .bottom_playbar {
     height: 70px;
     background-color: #282828;
+}
+
+/* *****CLASSI UTILITIES***** */
+
+.i_small {
+    width: 10px;
 }
