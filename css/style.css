@@ -189,6 +189,7 @@ ul li {
     height: auto;
     max-width: 300px;
     margin: auto;
+    position: relative;
 }
 
 .container_content_card_img img {
@@ -305,7 +306,7 @@ ul li {
 }
 
 .bottom_playbar_middle_controls .i_play_control {
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .pad_top_bottom {
@@ -351,6 +352,117 @@ ul li {
     color: white;
 }
 
+.c_lightgray {
+    color: #fefefe;
+}
+
 .display_xs_none {
     display: none;
+}
+
+/* *****ANIMAZIONI E VARIE***** */
+
+/* bottone upgrade */
+.container_upgrade a:hover {
+    font-size: 14px;
+    transition: font-size 0.1s;
+}
+
+/* linea gialla sotto link podcast e home */
+.container_navbar_box li {
+    position: relative;
+}
+
+.horizontal_line {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #adff2f;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.left_sidebar_top_icon {
+    position: relative;
+}
+
+.vertical_line {
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    background-color: #adff2f;
+    left: -10px;
+    top: 0;
+}
+
+/* link navbar bianchi*/
+.container_navbar_box a:hover {
+    color: white;
+}
+
+/* overlay card */
+.overlay_card {
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.overlay_card i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+
+.container_content_card:hover .overlay_card {
+    display: initial;
+}
+
+/* sidebar sx span link e icone bianchi */
+.left_sidebar a:hover,
+.left_sidebar span:hover {
+    color: white;
+}
+
+.left_sidebar a:hover,
+.left_sidebar span:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* testo sottolineato playline in fondo */
+.bottom_playbar_left_text h3:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* icone a fianco del testo nella playbar in fondo */
+.bottom_playbar_left_icon i:hover {
+    color: white;
+}
+
+/* tasto play playbar */
+.bottom_playbar_middle_controls .i_play_control:hover {
+    font-size: 26px;
+    transition: font-size 0.1s;
+}
+
+/* pallino nelle barre volume e tempo */
+.botom_playbar_middle_timebar_line::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
 }

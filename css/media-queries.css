@@ -12,7 +12,7 @@
     /* sidebar sezione alta */
     .left_sidebar_top_icon {
         width: auto;
-        margin-left: 10px;
+        padding-left: 10px;
     }
 
     .left_sidebar_top_icon img {
@@ -32,7 +32,7 @@
     /* sidebar sezione bassa */
     .left_sidebar_bottom_icon {
         width: auto;
-        margin-left: 10px;
+        padding-left: 10px;
     }
 
     .left_sidebar_bottom_icon:nth-child(1) {
@@ -68,6 +68,11 @@
 
     .h3_small {
         font-size: 10px;
+    }
+
+    /* linea verticale a sx */
+    .vertical_line {
+        left: 0px;
     }
 }
 
