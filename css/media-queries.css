@@ -1,8 +1,22 @@
 /* *****SCREEN SMALL dopo 576px***** */
 
 @media screen and (min-width: 576px) {
+    .only_xs {
+        display: none;
+    }
+
     .left_sidebar {
         width: 250px;
+    }
+
+    .left_sidebar_top_icon {
+        width: 25px;
+        margin-left: 10px;
+    }
+
+    .left_sidebar_top_icon:nth-child(1) {
+        width: 100px;
+        margin: 12px 0px 12px 10px;
     }
 }
 

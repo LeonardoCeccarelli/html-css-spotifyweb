@@ -62,6 +62,11 @@ ul li {
     padding-bottom: 5px;
 }
 
+.left_sidebar_top_icon span {
+    color: white;
+    font-size: 10px;
+}
+
 /* sidebar middle */
 .left_sidebar_middle {
     flex-grow: 1;
@@ -286,3 +291,7 @@ ul li {
     width: 40%;
     background-color: #c1c1c1;
 }
+
+/* .display_xs_none {
+    display: none;
+} */
