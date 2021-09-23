@@ -24,6 +24,10 @@ h3 {
     color: #878787;
 }
 
+h4 {
+    font-size: 12px;
+}
+
 a {
     text-decoration: none;
     font-size: 12px;
@@ -44,6 +48,7 @@ ul li {
 /* **SIDEBAR sx** */
 .left_sidebar {
     width: 40px;
+    height: 100%;
     background-color: #000000;
     flex-shrink: 0;
     display: flex;
@@ -63,23 +68,67 @@ ul li {
 }
 
 .left_sidebar_top_icon span {
-    color: white;
     font-size: 10px;
 }
 
 /* sidebar middle */
 .left_sidebar_middle {
     flex-grow: 1;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.left_sidebar_middle_head {
+    flex-shrink: 0;
+}
+
+.left_sidebar_middle_head h4 {
+    padding: 10px 0 7px;
+}
+
+.left_sidebar_middle_head i {
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+.left_sidebar_middle_head span {
+    padding-left: 5px;
+}
+
+.left_sidebar_middle_playlist {
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.left_sidebar_middle_playlist ul {
+    overflow: auto;
+    height: 100%;
+}
+
+.left_sidebar_middle_playlist li {
+    padding-top: 8px;
 }
 
 /* sidebar bottom */
 .left_sidebar_bottom {
     flex-shrink: 0;
+    padding-bottom: 5px;
 }
 
 .left_sidebar_bottom_icon {
     margin: auto;
     width: 20px;
+    padding-top: 10px;
+}
+
+.left_sidebar_bottom_icon span {
+    padding-left: 8px;
+}
+
+.left_sidebar_bottom_icon .c_white {
+    font-size: 14px;
 }
 
 /* **CONTENUTO** */
@@ -165,6 +214,8 @@ ul li {
     display: flex;
     align-items: center;
     padding: 0 7px;
+    position: relative;
+    z-index: 99;
 }
 
 /* sezione controlli barra bassa sinistra */
@@ -292,6 +343,14 @@ ul li {
     background-color: #c1c1c1;
 }
 
-/* .display_xs_none {
+.c_grey {
+    color: #878787;
+}
+
+.c_white {
+    color: white;
+}
+
+.display_xs_none {
     display: none;
-} */
+}

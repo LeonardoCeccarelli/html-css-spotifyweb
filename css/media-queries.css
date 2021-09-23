@@ -9,23 +9,92 @@
         width: 250px;
     }
 
+    /* sidebar sezione alta */
     .left_sidebar_top_icon {
-        width: 25px;
+        width: auto;
         margin-left: 10px;
     }
 
-    .left_sidebar_top_icon:nth-child(1) {
+    .left_sidebar_top_icon img {
+        width: 25px;
+    }
+
+    .left_sidebar_top_icon span {
+        line-height: 25px;
+        vertical-align: top;
+    }
+
+    .left_sidebar_top_icon:nth-child(1) img {
         width: 100px;
         margin: 12px 0px 12px 10px;
+    }
+
+    /* sidebar sezione bassa */
+    .left_sidebar_bottom_icon {
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .left_sidebar_bottom_icon:nth-child(1) {
+        padding-bottom: 10px;
+    }
+
+    .left_sidebar_bottom_icon:nth-child(2) {
+        border-top: 1px solid #878787;
+        margin-right: 10px;
+    }
+
+    .left_sidebar_bottom_icon:nth-child(1) img {
+        width: 16px;
+    }
+
+    .left_sidebar_bottom_icon:nth-child(2) img {
+        width: 25px;
+    }
+
+    .display_xs_none {
+        display: initial;
+    }
+
+    /* barra inferiore */
+    .bottom_playbar_left_img {
+        width: 30px;
+        height: auto;
+    }
+
+    .h2_small {
+        font-size: 12px;
+    }
+
+    .h3_small {
+        font-size: 10px;
     }
 }
 
 /* *****SCREEN MEDIUM dopo 768px***** */
 @media screen and (min-width: 768px) {
-    
+    /* larghezza card brani musicali */
+    .container_content_card {
+        width: calc(100% / 4 - 8px);
+    }
+
+    /* icone in fondo nella sezione a sinistra */
+    .bottom_playbar_left_icon i {
+        font-size: 14px;
+        color: #878787;
+        display: inline-block;
+        padding: 0 3px;
+    }
+
+    /* bottone play barra inferiore */
+    .bottom_playbar_middle_controls .i_play_control {
+        padding: 0 20px;
+    }
 }
 
 /* *****SCREEN LARGE dopo 992Px***** */
 @media screen and (min-width: 992px) {
-    
+    .container_content_card {
+        width: calc(100% / 6 - 9px);
+    }
 }
