@@ -330,7 +330,6 @@ ul li {
     background-color: #5a5a5a;
     height: 5px;
     border-radius: 5px;
-    overflow: hidden;
     position: relative;
     cursor: pointer;
 }
@@ -342,6 +341,7 @@ ul li {
     bottom: 0;
     width: 40%;
     background-color: #c1c1c1;
+    border-radius: 5px;
 }
 
 .c_grey {
@@ -454,15 +454,24 @@ ul li {
     transition: font-size 0.1s;
 }
 
-/* pallino nelle barre volume e tempo */
-.botom_playbar_middle_timebar_line::after {
+/* animazioni barre volume e secondi */
+.start_bar:hover .progress_bar {
+    background-color: #adff2f;
+}
+
+.progress_bar::after {
     content: "";
-    width: 8px;
-    height: 8px;
-    background-color: red;
-    border-radius: 50%;
+    background-color: white;
+    height: 15px;
+    width: 15px;
     position: absolute;
     right: 0;
-    top: 0;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    display: none;
+}
+
+.start_bar:hover .progress_bar::after {
+    display: initial;
 }
