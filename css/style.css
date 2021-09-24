@@ -15,12 +15,12 @@ h1 {
 }
 
 h2 {
-    font-size: 15px;
+    font-size: 13px;
     color: white;
 }
 
 h3 {
-    font-size: 13px;
+    font-size: 10px;
     color: #878787;
 }
 
@@ -135,6 +135,8 @@ ul li {
 .container {
     flex-grow: 1;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 /* bottone upgrade */
@@ -142,6 +144,7 @@ ul li {
     padding: 18px 5px 20px;
     text-align: right;
     background-color: rgba(0,0,0,0.5);
+    flex-shrink: 0;
 }
 
 .container_upgrade a {
@@ -153,7 +156,8 @@ ul li {
 
 /* navbar centrale */
 .container_navbar {
-    padding: 15px 13px 0;
+    padding: 15px 13px 10px;
+    flex-shrink: 0;
 }
 
 .container_navbar_box {
@@ -170,6 +174,8 @@ ul li {
 /* sezione titolo con box */
 .container_content {
     padding: 22px 13px 0;
+    flex-grow: 1;
+    overflow: auto;
 }
 
 .container_content_box {
@@ -194,6 +200,7 @@ ul li {
 
 .container_content_card_img img {
     width: 100%;
+    display: block;
 }
 
 .container_content_card_text {
@@ -253,13 +260,20 @@ ul li {
 }
 
 .bottom_playbar_middle_controls {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bottom_playbar_middle_controls i {
     padding: 0 6px;
     font-size: 14px;
     color: white;
+}
+
+.bottom_playbar_middle_controls a:first-child i,
+.bottom_playbar_middle_controls a:last-child i {
+    font-size: 10px;
 }
 
 .bottom_playbar_middle_timebar {
@@ -356,10 +370,6 @@ ul li {
     color: #fefefe;
 }
 
-.display_xs_none {
-    display: none;
-}
-
 /* *****ANIMAZIONI E VARIE***** */
 
 /* bottone upgrade */
@@ -451,7 +461,6 @@ ul li {
 /* tasto play playbar */
 .bottom_playbar_middle_controls .i_play_control:hover {
     font-size: 26px;
-    transition: font-size 0.1s;
 }
 
 /* animazioni barre volume e secondi */
