@@ -152,6 +152,7 @@ ul li {
     padding: 7px 18px;
     border: 1px solid white;
     border-radius: 15px;
+    transition: font-size 0.1s;
 }
 
 /* navbar centrale */
@@ -375,7 +376,6 @@ ul li {
 /* bottone upgrade */
 .container_upgrade a:hover {
     font-size: 14px;
-    transition: font-size 0.1s;
 }
 
 /* linea gialla sotto link podcast e home */
@@ -460,7 +460,7 @@ ul li {
 
 /* tasto play playbar */
 .bottom_playbar_middle_controls .i_play_control:hover {
-    font-size: 26px;
+    transform: scale(1.2);
 }
 
 /* animazioni barre volume e secondi */
